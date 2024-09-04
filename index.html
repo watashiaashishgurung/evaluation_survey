@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Feedback Survey</h1>
+    </header>
+
+    <main>
+        <form id="feedbackForm">
+            <label for="date">Date of Entry:</label><br>
+            <input type="date" id="date" required><br>
+
+            <label for="probleem">Titel van het probleem:</label><br>
+            <textarea id="probleem" rows="5" cols="30" placeholder="Vat het probleem kort samen." required></textarea><br>
+
+            <label for="reproduceren">Stappen om het probleem te reproduceren:</label><br>
+            <textarea id="reproduceren" rows="5" cols="30" placeholder="Geef stapsgewijze instructies om het probleem te reproduceren." required></textarea><br>
+
+            <label for="verwachteuitkomst">Verwachte uitkomst:</label><br>
+            <textarea id="verwachteuitkomst" rows="5" cols="30" placeholder="Beschrijf het normale of verwachte gedrag wanneer het probleem zich niet voordoet." required></textarea><br>
+            
+            <label for="werkelijkeuitkomst">Werkelijke uitkomst/waargenomen gedrag:</label><br>
+            <textarea id="werkelijkeuitkomst" rows="5" cols="30" placeholder="Beschrijf wat er gebeurt in plaats van de verwachte uitkomst." required></textarea><br>
+
+            <label for="eerstepoging">Eerste pogingen tot probleemoplossing:</label><br>
+            <textarea id="eerstepoging" rows="5" cols="30" placeholder="Lijst alle stappen die zijn geprobeerd om het probleem op te lossen en hun resultaten." required></textarea><br>
+            
+            <label for="oorzaken">Mogelijke oorzaken:</label><br>
+            <textarea id="oorzaken" rows="5" cols="30" placeholder="Lijst mogelijke oorzaken van het probleem op basis van symptomen en diagnostiek." required></textarea><br>
+           
+            <label for="informatie">Aanvullende informatie:</label><br>
+            <textarea id="informatie" rows="5" cols="30" placeholder="Voeg relevante schermafbeeldingen, logboeken of foutcodes toe." required></textarea><br>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <hr>
+
+        <div id="userInfo" style="display: none;">
+            <h2>User Information:</h2>
+            <p>Date of Entry: <span id="userDate"></span></p>
+            <p>Titel van het probleem: <span id="userProbleem"></span></p>
+            <p>Stappen om het probleem te reproduceren: <span id="userReproduceren"></span></p>
+            <p>Verwachte uitkomst: <span id="userVerwachteuitkomst"></span></p>
+            <p>Werkelijke uitkomst/waargenomen gedrag: <span id="userWerkelijkeuitkomst"></span></p>
+            <p>Eerste pogingen tot probleemoplossing: <span id="userEerstepoging"></span></p>
+            <p>Mogelijke oorzaken: <span id="userOorzaken"></span></p>
+            <p>Aanvullende informatie: <span id="userInformatie"></span></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
